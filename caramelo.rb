@@ -10,16 +10,16 @@ class Caramelo < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/FreVis/caramelo-cli/releases/download/v0.0.1/caramelo_0.0.1_macos_amd64.tar.gz"
-      sha256 "36b981d3f7823af70055d85cc596870202da13f51c60e2ff0ccd32903de11f98"
+      url "https://github.com/FreVis/homebrew-caramelo/releases/download/v0.0.1/caramelo_0.0.1_macos_amd64.tar.gz"
+      sha256 "f0f9e285faf39ae5baa6de56a7313bff0c3cb3580c2c3eb496e795e4e9f93b1f"
 
       define_method(:install) do
         bin.install "caramelo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/FreVis/caramelo-cli/releases/download/v0.0.1/caramelo_0.0.1_macos_arm64.tar.gz"
-      sha256 "5485c668a75930b3039aecff7cb139fdb89793667c92d886d43c1aea23bb3cb0"
+      url "https://github.com/FreVis/homebrew-caramelo/releases/download/v0.0.1/caramelo_0.0.1_macos_arm64.tar.gz"
+      sha256 "2dfdd97396802b20b5d1b60371a13d45135a1e76f6c76e414b8b65e30cfcee5b"
 
       define_method(:install) do
         bin.install "caramelo"
@@ -29,15 +29,15 @@ class Caramelo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FreVis/caramelo-cli/releases/download/v0.0.1/caramelo_0.0.1_linux_amd64.tar.gz"
-      sha256 "e098a7bc1c56e20abe913ff4be7bf9658e70de8397fc67018acf21a5ba57e3f5"
+      url "https://github.com/FreVis/homebrew-caramelo/releases/download/v0.0.1/caramelo_0.0.1_linux_amd64.tar.gz"
+      sha256 "78f76ce5b9cfecdf1fec84e704f83764b11dd1b9f01e7d7f9af70d4c7a1c6de8"
       define_method(:install) do
         bin.install "caramelo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FreVis/caramelo-cli/releases/download/v0.0.1/caramelo_0.0.1_linux_arm64.tar.gz"
-      sha256 "6ab95ee194172330547b4f90b7639c3449b31c30730b923733351a82ba654287"
+      url "https://github.com/FreVis/homebrew-caramelo/releases/download/v0.0.1/caramelo_0.0.1_linux_arm64.tar.gz"
+      sha256 "c978dc73e68359b12a88fa44981b0ac96cfd33ae4e2138fd39e7a159dee2ba3a"
       define_method(:install) do
         bin.install "caramelo"
       end
