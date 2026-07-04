@@ -5,21 +5,21 @@
 class Caramelo < Formula
   desc "Caramelo CLI — manage AI coding skills from your terminal"
   homepage "https://caramelo.dev"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/FreVis/homebrew-caramelo/releases/download/v0.0.1/caramelo_0.0.1_macos_amd64.tar.gz"
-      sha256 "f0f9e285faf39ae5baa6de56a7313bff0c3cb3580c2c3eb496e795e4e9f93b1f"
+      url "https://github.com/FreVis/homebrew-caramelo/releases/download/v0.0.2/caramelo_0.0.2_macos_amd64.tar.gz"
+      sha256 "db205430fcf3f3f03182706bcf94aa6923ce356fbac6481fd9b6913c86c25f78"
 
       define_method(:install) do
         bin.install "caramelo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/FreVis/homebrew-caramelo/releases/download/v0.0.1/caramelo_0.0.1_macos_arm64.tar.gz"
-      sha256 "2dfdd97396802b20b5d1b60371a13d45135a1e76f6c76e414b8b65e30cfcee5b"
+      url "https://github.com/FreVis/homebrew-caramelo/releases/download/v0.0.2/caramelo_0.0.2_macos_arm64.tar.gz"
+      sha256 "6620c0c45259891019c45d94973a8ca92b6d113ca508548b43063239ac9edead"
 
       define_method(:install) do
         bin.install "caramelo"
@@ -29,15 +29,15 @@ class Caramelo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FreVis/homebrew-caramelo/releases/download/v0.0.1/caramelo_0.0.1_linux_amd64.tar.gz"
-      sha256 "78f76ce5b9cfecdf1fec84e704f83764b11dd1b9f01e7d7f9af70d4c7a1c6de8"
+      url "https://github.com/FreVis/homebrew-caramelo/releases/download/v0.0.2/caramelo_0.0.2_linux_amd64.tar.gz"
+      sha256 "a70796497294e9b2a423ce4c2c38e8a3b2ad20ff5cf4c08722b6eb5a6ec2d340"
       define_method(:install) do
         bin.install "caramelo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/FreVis/homebrew-caramelo/releases/download/v0.0.1/caramelo_0.0.1_linux_arm64.tar.gz"
-      sha256 "c978dc73e68359b12a88fa44981b0ac96cfd33ae4e2138fd39e7a159dee2ba3a"
+      url "https://github.com/FreVis/homebrew-caramelo/releases/download/v0.0.2/caramelo_0.0.2_linux_arm64.tar.gz"
+      sha256 "26887178085e1a3f55dad60b76cc0673c2b3832aca40acce942cb9bed63920e9"
       define_method(:install) do
         bin.install "caramelo"
       end
